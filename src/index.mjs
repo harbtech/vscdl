@@ -18,7 +18,7 @@ console.debug('VERCEL_API_BASE:', VERCEL_API_BASE)
 console.debug('VERCEL_API_TOKEN:', VERCEL_API_TOKEN)
 console.debug('VERCEL_API_TOKEN:', VERCEL_TEAM)
 
-import pkg from '../package.json' assert { type: 'json' };
+import pkg from '../package.json' with { type: 'json' };
 
 const version = pkg.version
 
